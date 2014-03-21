@@ -1,16 +1,14 @@
-vanillaJs
+jquery vs vanilla js
 =========
 
-jquery vs vanilla js
 
-selectors
+<h2>selectors</h2>
 
 ``` javascript
 // jquery 
 $(selector);
 
 // javascript
-
 document.querySelectorAll(selector); // return an array of dom element
 document.querySelector(selector); // return the first dom element found
 
@@ -22,10 +20,10 @@ document.getElementsByName('myTagName');
 
 ```
 
-get / set attribute
+<h2>get / set attribute</h2>
 
 ``` javascript
-// jquery attribute
+// jquery
 var el = $('#element');
 $(el).attr('data');
 $(el).attr('data', 'myData');
@@ -37,7 +35,7 @@ el.setAttribute('data', 'myData');
 
 ```
 
-dom ready
+<h2>dom ready</h2>
 
 ``` javascript
 //jquery 
@@ -51,7 +49,8 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 ```
-Class
+
+<h2>Class</h2>
 
 ``` javascript
 //jquery
@@ -71,9 +70,9 @@ function hasClass( element, className ) {
 }
 ```
 
-events
+<h2>events</h2>
 
-live / on event
+<h3>live / on event</h3>
 
 ``` javascript
 //jquery 
@@ -95,7 +94,7 @@ function hasClass( target, className ) {
 
 ```
 
-click event
+<h2>click event</h2>
 
 ``` javascript
 // jquery
@@ -106,7 +105,7 @@ element.addEventListener(eventType, function() { ... }, false);
 
 ```
 
-dom manipulation
+<h2>dom manipulation</h2>
 
 ``` javascript
 //jquery
@@ -133,9 +132,10 @@ var element = document.querySelector(selector);
 element.parentNode.removeChild(c);
 ```
 
-ajax
+<h2>ajax</h2>
 
-get
+<h3>get</h3>
+
 ``` javascript
 //jquery
 $.get(url, function (data) {
@@ -151,7 +151,7 @@ httpRequest.open('GET', url);
 httpRequest.send();
 ```
 
-post
+<h3>post</h3>
 ``` javascript
 var dataObject = {param1: value1};
 
