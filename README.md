@@ -2,7 +2,7 @@ jquery vs vanilla js
 =========
 
 
-<h2>selectors</h2>
+<h2>Selector</h2>
 
 ``` javascript
 // jquery 
@@ -20,20 +20,33 @@ document.getElementsByName('myTagName');
 
 ```
 
-<h2>get / set attribute</h2>
+<h2>Attribute</h2>
+
+<h3>get</h3>
 
 ``` javascript
 // jquery
-var el = $('#element');
+var el = $(selector);
 $(el).attr('data');
+
+//javascript
+var el = document.querySelector(selector);
+el.getAttribute('data');
+```
+
+<h3>set</h3>
+
+``` javascript
+// jquery
+var el = $(selector);
 $(el).attr('data', 'myData');
 
 //javascript
-var el = document.getElementsById('myId');
-el.getAttribute('data');
+var el = document.querySelector(selector);
 el.setAttribute('data', 'myData');
 
 ```
+
 
 <h2>dom ready</h2>
 
@@ -52,25 +65,39 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <h2>Class</h2>
 
+<h3>add class</h3>
 ``` javascript
 //jquery
-$(element).addClass('wrap');
+$(selector).addClass('wrap');
 
 //javascript
-document.querySelector(element).classList.add('wrap');
+document.querySelector(selector).classList.add('wrap');
 ```
 
+<h3>remove class</h3>
 ``` javascript
 //jquery
-$(element).hasClass(className)
+$(selector).removeClass('wrap');
 
 //javascript
-function hasClass( element, className ) {
+document.querySelector(selector).classList.remove('wrap');
+```
+
+
+<h3>has class</h3>
+``` javascript
+//jquery
+$(selector).hasClass(className);
+
+//javascript
+function hasClass( target, className ) {
   return new RegExp('(\\s|^)' + className + '(\\s|$)').test(target.className);
 }
+
+document.querySelector(selector).classList.contains(className));
 ```
 
-<h2>events</h2>
+<h2>Event</h2>
 
 <h3>live / on event</h3>
 
@@ -94,7 +121,7 @@ function hasClass( target, className ) {
 
 ```
 
-<h2>click event</h2>
+<h3>binding event</h3>
 
 ``` javascript
 // jquery
@@ -132,7 +159,7 @@ var element = document.querySelector(selector);
 element.parentNode.removeChild(c);
 ```
 
-<h2>ajax</h2>
+<h2>Ajax</h2>
 
 <h3>get</h3>
 
