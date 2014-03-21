@@ -27,7 +27,7 @@ document.getElementsByName('myTagName');
 ``` javascript
 // jquery
 var el = $(selector);
-$(el).attr('data');
+el.attr('data');
 
 //javascript
 var el = document.querySelector(selector);
@@ -39,7 +39,7 @@ el.getAttribute('data');
 ``` javascript
 // jquery
 var el = $(selector);
-$(el).attr('data', 'myData');
+el.attr('data', 'myData');
 
 //javascript
 var el = document.querySelector(selector);
