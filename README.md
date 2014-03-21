@@ -24,7 +24,7 @@ document.getElementsByName('myTagName');
 
 get / set attribute
 
-```
+``` javascript
 // jquery attribute
 var el = $('#element');
 $(el).attr('data');
@@ -39,7 +39,7 @@ el.setAttribute('data', 'myData');
 
 dom ready
 
-```
+``` javascript
 //jquery 
 $(function () {
   // place code here
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
 ```
 Class
 
-```
+``` javascript
 //jquery
 $(element).addClass('wrap');
 
@@ -61,7 +61,7 @@ $(element).addClass('wrap');
 document.querySelector(element).classList.add('wrap');
 ```
 
-```
+``` javascript
 //jquery
 $(element).hasClass(className)
 
@@ -75,7 +75,7 @@ events
 
 live / on event
 
-```
+``` javascript
 //jquery 
 $( document ).on( eventType, classSelector, data, handler );  
 
@@ -97,7 +97,7 @@ function hasClass( target, className ) {
 
 click event
 
-```
+``` javascript
 // jquery
 $(element).bind(eventType, function() {...}, )
 
@@ -108,7 +108,7 @@ element.addEventListener(eventType, function() { ... }, false);
 
 dom manipulation
 
-```
+``` javascript
 //jquery
 $(element).append($('<div/>'));
 
@@ -116,7 +116,7 @@ $(element).append($('<div/>'));
 document.querySelector(selector).innerHTML += "<div></div>";
 ```
 
-``` 
+``` javascript
 //jquery 
 $(element).empty();
 
@@ -124,7 +124,7 @@ $(element).empty();
 document.querySelector(selector).innerHTML = null;
 ```
 
-```
+``` javascript
 //jquery 
 $(selector).remove();
 
@@ -136,7 +136,7 @@ element.parentNode.removeChild(c);
 ajax
 
 get
-```
+``` javascript
 //jquery
 $.get(url, function (data) {
   // place code here
@@ -152,7 +152,7 @@ httpRequest.send();
 ```
 
 post
-```
+``` javascript
 var dataObject = {param1: value1};
 
 //jquery
