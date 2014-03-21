@@ -5,7 +5,7 @@ jquery vs vanilla js
 
 selectors
 
-```
+``` javascript
 // jquery 
 $(selector);
 
